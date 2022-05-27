@@ -1,5 +1,5 @@
 resource "local_file" "testLocalFile" {
-  filename = "ravi01.txt"
+  filename = var.filename
   content  = "foo!"
   file_permission = 0700
 }
