@@ -1,6 +1,6 @@
 resource "local_file" "testLocalFile" {
   filename = var.filename
-  content  = "foo!"
+  content  = "${random_string.testRandomString.id}"
   file_permission = 0700
 }
 
