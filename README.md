@@ -16,3 +16,13 @@
 -- terraform.tfvars, terraform.tfvars.json
 --  *.auto.tfvars or *.auto.tfvars.json
 -- -var-file
+
+# Output
+- output <name> {
+  value = <reference expression>
+  description = <optional description>
+}
+- Usage 
+-- "terraform output" -> print all output vars 
+-- "terraform output <varname>" -> print output var named varname
+
