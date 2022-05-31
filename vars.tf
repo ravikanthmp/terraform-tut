@@ -27,11 +27,7 @@ variable "testObject"{
         id = number
         favFood = list(string)
     })
-    default = {
-        name = "ravi"
-        id = 21
-        favFood = ["aalo"]
-    }
+   
 }
 
 variable "testMap"{
