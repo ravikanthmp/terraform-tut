@@ -1,6 +1,6 @@
 resource "local_file" "testLocalFile" {
   filename = var.filename
-  content  = "${random_string.testRandomString.id}"
+  content  = data.local_file.testManuallyCreatedFile.content
   file_permission = 0700
 
   lifecycle{
@@ -16,4 +16,8 @@ resource "random_string" "testRandomString" {
 output "random_string_content" {
   value = "${random_string.testRandomString.id}"
   description = "Output of the random string reosurce"
+}
+
+data "local_file" "testManuallyCreatedFile" {
+  filename = "dataosurce.txt"
 }

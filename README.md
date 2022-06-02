@@ -48,3 +48,10 @@
 - "ignore_changes = [<resurce_attributes>]  or "all" // ignore changes made outside terraform
 
 
+# Datasources
+## Stuff not managed by terraform, but you want to use the data
+## How to use
+- just like "resource" block, but replace resource -> data
+- data <resource_type> <name> {
+  
+}
